@@ -11,12 +11,13 @@
 		005984FB1C59D8D7000ADE79 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005984FA1C59D8D7000ADE79 /* ViewController.swift */; };
 		005985001C59D8D7000ADE79 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 005984FF1C59D8D7000ADE79 /* Assets.xcassets */; };
 		005985031C59D8D7000ADE79 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 005985011C59D8D7000ADE79 /* LaunchScreen.storyboard */; };
-		0059850D1C59D90E000ADE79 /* libmPushSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0059850B1C59D90E000ADE79 /* libmPushSDK.a */; };
 		005985151C59DB2F000ADE79 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 005985141C59DB2F000ADE79 /* SystemConfiguration.framework */; };
 		005985171C59DB34000ADE79 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 005985161C59DB34000ADE79 /* MobileCoreServices.framework */; };
 		005985191C59DB5B000ADE79 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 005985181C59DB5B000ADE79 /* CoreTelephony.framework */; };
 		0059851B1C59DB65000ADE79 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0059851A1C59DB65000ADE79 /* CoreLocation.framework */; };
 		0059851D1C59DB6B000ADE79 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0059851C1C59DB6B000ADE79 /* Security.framework */; };
+		00EBFD651C5B0ADB000F49CC /* libPushManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00EBFD641C5B0ADB000F49CC /* libPushManager.a */; };
+		00EBFD671C5B0B1D000F49CC /* DemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EBFD661C5B0B1D000F49CC /* DemoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,7 +27,6 @@
 		005984FF1C59D8D7000ADE79 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		005985021C59D8D7000ADE79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		005985041C59D8D7000ADE79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0059850B1C59D90E000ADE79 /* libmPushSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libmPushSDK.a; sourceTree = "<group>"; };
 		0059850C1C59D90E000ADE79 /* PushManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushManager.h; sourceTree = "<group>"; };
 		0059850E1C59D947000ADE79 /* mPushSwiftDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "mPushSwiftDemo-Bridging-Header.h"; sourceTree = "<group>"; };
 		005985141C59DB2F000ADE79 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -34,6 +34,8 @@
 		005985181C59DB5B000ADE79 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		0059851A1C59DB65000ADE79 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		0059851C1C59DB6B000ADE79 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		00EBFD641C5B0ADB000F49CC /* libPushManager.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libPushManager.a; sourceTree = "<group>"; };
+		00EBFD661C5B0B1D000F49CC /* DemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,7 +48,7 @@
 				005985191C59DB5B000ADE79 /* CoreTelephony.framework in Frameworks */,
 				005985171C59DB34000ADE79 /* MobileCoreServices.framework in Frameworks */,
 				005985151C59DB2F000ADE79 /* SystemConfiguration.framework in Frameworks */,
-				0059850D1C59D90E000ADE79 /* libmPushSDK.a in Frameworks */,
+				00EBFD651C5B0ADB000F49CC /* libPushManager.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +82,7 @@
 				0059850A1C59D90E000ADE79 /* lib */,
 				005984F81C59D8D7000ADE79 /* AppDelegate.swift */,
 				005984FA1C59D8D7000ADE79 /* ViewController.swift */,
+				00EBFD661C5B0B1D000F49CC /* DemoViewController.swift */,
 				005984FF1C59D8D7000ADE79 /* Assets.xcassets */,
 				005985011C59D8D7000ADE79 /* LaunchScreen.storyboard */,
 				005985041C59D8D7000ADE79 /* Info.plist */,
@@ -91,7 +94,7 @@
 		0059850A1C59D90E000ADE79 /* lib */ = {
 			isa = PBXGroup;
 			children = (
-				0059850B1C59D90E000ADE79 /* libmPushSDK.a */,
+				00EBFD641C5B0ADB000F49CC /* libPushManager.a */,
 				0059850C1C59D90E000ADE79 /* PushManager.h */,
 			);
 			path = lib;
@@ -172,6 +175,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00EBFD671C5B0B1D000F49CC /* DemoViewController.swift in Sources */,
 				005984FB1C59D8D7000ADE79 /* ViewController.swift in Sources */,
 				005984F91C59D8D7000ADE79 /* AppDelegate.swift in Sources */,
 			);
@@ -330,6 +334,7 @@
 				005985091C59D8D7000ADE79 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

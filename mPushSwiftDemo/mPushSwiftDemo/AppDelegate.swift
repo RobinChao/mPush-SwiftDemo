@@ -27,6 +27,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate, PushManagerDelegate, Devi
         PushManager.setAlias("Alias-Testing")
         PushManager.ensureTags(["tag"])
         
+        
+        let views = [DemoViewController.self]
+        let alias = ["SwiftDemo"]
+        let methods = ["setExData:"]
+        let displayModel = ["present"]
+        PushManager.setDisplayViews(views, viewAlias: alias, methods: methods, displayModes: displayModel)
+        
+        
         self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
         
         let viewController = ViewController()
